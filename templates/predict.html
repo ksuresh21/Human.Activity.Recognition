@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static\css\style.css">
+	<title>Human Activity Recognition</title>
+</head>
+<body>
+	<h1>Human Activity Recognition</h1>
+    <h2>Prediction</h2>
+    <form  name="form4" method="POST" action="{{ url_for('upload_predict_file') }}" enctype="multipart/form-data">
+        <label for="file">Select file(s):</label>
+        <input type="file" name="file">
+        <button type="submit">Upload</button>
+        <h3>{{ file_status }}</h3>
+    </form>
+
+    <div name="div4">
+        <br>
+        <button type="prdict_data" onclick="redirectTrainThedata()" >PREDICT MY DATA</button>
+        <lable>{{ predict_status }}</lable>
+        <br>
+    </div>   
+
+    <div name="backdiv">
+        <br>
+        <button type="backdiv" onclick="backtohome()" >GO BACK</button>
+        <!-- <lable>{{ data_prep_fun_status }}</lable> -->
+        <br>
+    </div>  
+
+<script>
+    function redirectTrainThedata() {
+        window.location.href = "{{ url_for('prdict_data') }}";
+    }
+    function backtohome() {
+        window.location.href = "{{ url_for('backtohome') }}";
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+li {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+h3 {
+    margin-top: 20px;
+    color: #333;
+}
+form[name="form2"],
+form[name="form1"],
+div[name="div2"],
+div[name="div3"]{
+    text-align: left;
+    margin: 0 50px; /* Adjust the left and right margins as needed */
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+form[name="form4"],
+div[name="div4"],
+div[name="backdiv"]{
+    text-align: left;
+    margin: 0 50px; /* Adjust the left and right margins as needed */
+    max-width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+
+
+button[type="train"],
+button[type="predict"],
+button[type="prdict_data"] {
+    display: inline-block;
+    margin-right: 16px;
+    width: 46%; /* Set the width of each button to less than 50% to account for the margin */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="backdiv"]  {
+    display: inline-block;
+    margin-right: 16px;
+    width: 100%; /* Set the width of each button to less than 50% to account for the margin */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button[type="data_present"] {
+    display: block;
+    width: 96%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+input[type="text"],
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+}
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+button[type="data_prep_fun"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+

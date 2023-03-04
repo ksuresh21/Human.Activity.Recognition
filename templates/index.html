@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="static\css\style.css">
+	<title>Human Activity Recognition</title>
+</head>
+<body>
+	<h1>Human Activity Recognition</h1>
+    <h2>Project Description</h2>
+    <p>Human Activity Recognition is a website dedicated to showcasing a machine learning project that can recognize and classify human actions in videos. The website serves as a platform for users to upload their own video files, and then view the predicted action categories for each video.</p>
+    <!-- <ul>
+        <li>Home page: Provides a brief introduction to the project and its purpose, as well as instructions on how to use the website.</li>
+        <li>Upload page: Allows users to select and upload their video files to be processed by the machine learning algorithm.</li>
+        <li>Data preparation page: Preprocesses the video data by extracting relevant features and storing them in a CSV file for later use.</li>
+        <li>Training page: Trains the machine learning model using the preprocessed data.</li>
+        <li>Prediction page: Provides a form for users to select the trained model and input their own video file to obtain a prediction on the human activity category.</li>
+        <li>About page: Provides more information about the project, the machine learning model used, and the technology stack used to build the website.</li>
+    </ul> -->
+    <!-- <p>The website is built using the Flask web framework in Python, and uses HTML, CSS, and JavaScript for the front-end design. The machine learning model used is a convolutional neural network (CNN) trained on a large dataset of human actions in videos. The website also utilizes various Python libraries such as OpenCV, NumPy, Pandas, and TensorFlow for data processing, machine learning, and web development tasks.</p>
+    <br> -->
+    <br>
+    <form name="form2" method="GET" action="{{ url_for('trained_data') }}" enctype="multipart/form-data">
+          <label> Check which data is already Trained on:</label>
+          <button type="data_present" onclick="redirectTraineddata()">CLICK HERE TO CHECK</button>
+          <ul>
+            {% for label in list_status %}
+            <li><span style="font-weight: bold;"></span>{{ label }}</span></li>
+            {% endfor %}
+          </ul>
+    </form>
+    
+        <div name="div2" class="button-group">
+            <button type="train" onclick="redirectTrain()">TRAIN MORE DATA</button>
+            <button type="predict" onclick="redirectpredict()">PREDICT MY DATA</button>
+          </div>
+
+<script>
+        function redirectTrain() {
+            window.location.href = "{{ url_for('train') }}";
+        }
+        function redirectpredict() {
+            window.location.href = "{{ url_for('predict') }}";
+        }
+        </script>
+        
+</body>
+</html>
